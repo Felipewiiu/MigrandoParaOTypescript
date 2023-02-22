@@ -46,7 +46,8 @@ Comando completo fica assim : `npm install --save typescript @types/node @types/
 
 - Primeiro crie uma interface com as propriedades que o elemento botão  deve receber
 - No caso ele recebe um `ReactElement`
-- Habilite no `tsconfig.json` a propriedade `jsx: "react"` para poder retornar jsx
+- Habilite no `tsconfig.json` a propriedade `jsx: "react"` para poder reconhecer o jsx
+- Para poder fazer o reconhecimento  de jsx sem precisar importar o `react`, habilite o `jsx: "react"` para `jsx: "react-jsx"`
 
 Exemplo:
 
