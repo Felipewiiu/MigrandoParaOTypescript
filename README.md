@@ -28,7 +28,7 @@ Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `
 
 Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
 
-## Dicas de instalação do Typescript
+## 💡 Dicas de instalação do Typescript
 
 - Primeiro deve-se começar com um `npm istall` 
 - depois o `--save` que serve para salvar no packge.json onde ele controla as dependências
@@ -47,5 +47,26 @@ Comando completo fica assim : `npm install --save typescript @types/node @types/
 - Primeiro crie uma interface com as propriedades que o elemento botão  deve receber
 - No caso ele recebe um `ReactElement`
 - Habilite no `tsconfig.json` a propriedade `jsx: "react"` para poder retornar jsx
+
+Exemplo:
+
+```
+import { ReactElement } from 'react'
+import './Botao.css'
+import React from 'react'
+
+interface BotaoProps {
+    children: ReactElement
+}
+
+const Botao = (props: BotaoProps) => {
+    return (<button className='botao'>
+        {props.children}
+    </button>)
+}
+
+export default Botao
+```
+
 
 

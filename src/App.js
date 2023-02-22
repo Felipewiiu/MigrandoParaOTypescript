@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Banner from './componentes/Banner/Banner.tsx'
+
 
 function App() {
 
@@ -52,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
+      <Banner enderecoImagem={"/imagens/banner.png"} textoAlternativo={"O banner principal da página do Organo"}/>
       <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
 
       {times.map(time => <Time 
