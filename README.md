@@ -69,5 +69,37 @@ const Botao = (props: BotaoProps) => {
 export default Botao
 ```
 
+## Eventos precisam ser definidos no argumento da função
+
+É preciso dizer o que uma função deve receber como a chave e valor, olhe este exemplo:
+
+```
+const aoDigitado = (evento: React.ChangeEvent<HTMLInputElement>) => {
+        props.aoAlterado(evento.target.value)
+    }
+```
+
+
+## Compartilhamento de interfaces
+
+Quando se define tipos podemos se deparar com um tipo especial que é o caso de um array de objetos. A maneira de tipar esse array é criando uma nove interface e compartilhar ela com quem precisar usar. Olhe este exemplo:
+
+```
+export interface IColaborador{
+    nome: string
+    cargo: string
+    imagem: string
+}
+```
+
+## Inferências de tipos generics
+
+
+
+
+
+
+
+
 
 
