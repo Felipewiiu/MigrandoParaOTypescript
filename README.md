@@ -94,6 +94,16 @@ export interface IColaborador{
 
 ## Inferências de tipos generics
 
+????????//
+
+## Ligando e desligando regras do TS
+
+Neste projeto foi ligado as seguintes regras:
+
+- "noUnusedLocals": true *Esse comando avisa quando uma variável é criada mas não atribuida*
+- "strict": true, 
+- "jsx": "react-jsx", 
+
 
 
 
