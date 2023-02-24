@@ -104,6 +104,13 @@ Neste projeto foi ligado as seguintes regras:
 - "strict": true, 
 - "jsx": "react-jsx", 
 
+## Documentação de apoio
+
+`https://www.typescriptlang.org/docs/handbook/tsconfig-json.html`
+
+`https://www.typescriptlang.org/tsconfig`
+
+
 
 
 
